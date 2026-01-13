@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | AQ Signature Weddings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific Gallery Styling */
+        .gallery-section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item p {
+            padding: 15px;
+            background: lightyellow;
+            font-weight: bold;
+            color: #b8860b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">AQ Signature</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Packages</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-section">
+        <h1>Our Event Portfolio</h1>
+        <p>A glimpse into the beautiful memories we have helped create.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="imageswork/out 2.jpg" alt="Outdoor Wedding">
+                <p>Garden Romance </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="imageswork/annualgala.png" alt="Corporate Gala">
+                <p>An Annual Tech Award </p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="imageswork/lux.jpg" alt="Luxury Table Setup">
+                <p>Golden Anniversary Dinner</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="imageswork/cake 1.jpg" alt="Wedding Cake">
+                <p>The Royal Cake Cutting</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="imageswork/zanzi.jpg" alt="Beach Wedding">
+                <p>Sunset Vows - Zanzibar</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="imageswork/recp.jpg" alt="Reception Hall">
+                <p>Grand Ballroom Transformation</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; background: #333; color: white; margin-top: 50px;">
+        <p>&copy; 2026 AQ Signature Weddings. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

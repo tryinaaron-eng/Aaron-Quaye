@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment & Packages | AQ Signature Weddings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fdfaf5;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 10%;
+            background-color: #fff;
+        }
+
+        .price-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            width: 320px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Highlight the middle/popular card */
+        .featured {
+            border: 2px solid #b8860b;
+            transform: scale(1.05);
+        }
+
+        .featured-tag {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #b8860b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .price-card h2 { color: #b8860b; margin-bottom: 10px; }
+        .price-amount { font-size: 36px; font-weight: bold; margin-bottom: 20px; color: #333; }
+        .price-amount span { font-size: 16px; color: #888; }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .feature-list li::before {
+            content: "✓ ";
+            color: #b8860b;
+            font-weight: bold;
+        }
+
+        .book-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #b8860b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">AQ Signature</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Packages</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pricing-header">
+        <h1 style="color: #b8860b; font-size: 32px;">Bespoke Investment Packages</h1>
+        <p>Transparency is the foundation of our partnership.</p>
+    </div>
+
+    <section class="pricing-container">
+        
+        <div class="price-card">
+            <h2>Silver</h2>
+            <div class="price-amount">$1,500 <span>/ Day-of</span></div>
+            <ul class="feature-list">
+                <li>Final 4 weeks coordination</li>
+                <li>1 Lead planner for event day</li>
+                <li>Vendor contact & confirmation</li>
+                <li>Rehearsal direction (2 hours)</li>
+                <li>Emergency bridal kit access</li>
+            </ul>
+            <a href="contact.html" class="book-btn">Select Silver</a>
+        </div>
+
+        <div class="price-card featured">
+            <div class="featured-tag">Most Popular</div>
+            <h2>Gold</h2>
+            <div class="price-amount">$3,800 <span>/ Partial</span></div>
+            <ul class="feature-list">
+                <li>Everything in Silver</li>
+                <li>6 Months of planning support</li>
+                <li>Vendor sourcing & visits</li>
+                <li>Budget tracking & management</li>
+                <li>Full floor plan & seating design</li>
+            </ul>
+            <a href="contact.html" class="book-btn">Select Gold</a>
+        </div>
+
+        <div class="price-card">
+            <h2>Platinum</h2>
+            <div class="price-amount">$7,500 <span>/ Full</span></div>
+            <ul class="feature-list">
+                <li>Complete concept design</li>
+                <li>Unlimited planning sessions</li>
+                <li>RSVP & Guest list management</li>
+                <li>Bridal styling & Concierge</li>
+                <li>Post-event cleanup & storage</li>
+            </ul>
+            <a href="contact.html" class="book-btn">Select Platinum</a>
+        </div>
+
+    </section>
+
+    <footer style="text-align: center; padding: 40px; background: #333; color: white;">
+        <p>&copy; 2026 AQ Signature Weddings. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
